@@ -1,3 +1,4 @@
+learn
 require 'spec_helper'
 
 describe 'conference_badges' do
@@ -24,7 +25,7 @@ describe 'conference_badges' do
                             "Hello, Matz! You'll be assigned to room 7!"
                          ]}
 
-# This funny looking <<-TEXT thing is called heredoc. It's a multi-line string
+# This funny looking <<-TEXT thing is called heredoc. It's a multi-line learnstring
 # delimiter that makes it really easy for us to write multi-line strings in the
 # middle of code. The TEXT part is arbitrary too.
 # It could easily have been <<-BLAHBLAH. The only requirement is that you use
