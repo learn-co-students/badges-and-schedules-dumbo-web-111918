@@ -3,17 +3,24 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  counter = 1
-  while counter < attendees.size 
-    return badge_maker(attendees[counter-1])
-    counter + = 1
-  end
+    budges = []
+   attendees.each do |name|
+        badge = badge_maker()
+        badges << badge
+    end
+    badges
 end
 
 def assign_rooms(attendees)
-  counter = 1
-    while counter <attendees.size
-      return "Hello, #{attendees[counter - 1]}! You'll be assigned to room #{counter}!"
-        counter + = 1
-    end
+  assingments = []
+  attendees.each_with_index do |attendees, index|
+    assingment= "Hello, #{attendees}! You'll be assigned to room #{index + 1}!"
+    assingments << assingment
+  end
+  assingments
+end
+
+def printer
+  puts badges = batch_badge_creator(attendees)
+  puts assignments = assign_rooms(attendees)
 end
