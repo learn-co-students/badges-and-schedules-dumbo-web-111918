@@ -15,19 +15,18 @@ def assign_rooms(attendees)
   attendees.each_with_index do |attendees, index|
       room_assingments << "Hello, #{attendees}! You'll be assigned to room #{index + 1}!"
   end
-  return room_assingments
+  room_assingments
 end
 
 
-def printer
+def printer(attendees)
      
-    
-  
-  puts badges = batch_badge_creator(attendees)
+  badges = batch_badge_creator(attendees)
   badges.each do |badge|
-        puts badge
+    puts badge
   end
-  puts assignments = assign_rooms(attendees)
+  
+  assignments = assign_rooms(attendees)
   assignments.each do |assingment|
         puts assingment
   end
